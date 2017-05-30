@@ -53,8 +53,12 @@ body {
   margin: 0 auto;
   padding-top: 15px;
   background: #00b63f;
-  color: #fff;
   cursor: pointer;
   text-align: center;
+}
+
+.intro-button > a {
+  color: #fff;
+  text-decoration: none;
   text-transform: uppercase;
 }

@@ -12,9 +12,11 @@ export default function Landing(props) {
         <h1>Welcome Aboard!</h1>
         <p>A one of a kind platform to discover, create, manage blogs</p>
       </div>
-      <Link className='intro-button' to='/newsfeed'>
-        start your journey
-      </Link>
+      <div className='intro-button'>
+        <Link to='/newsfeed'>
+          start your journey
+        </Link>
+      </div>
     </div>
   );
 }
