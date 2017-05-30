@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function FeedItem(props) {
   return (
     <div className='feed-item'>
-      <a href="#fixme">
+      <Link to={`/newsfeed/${props.articleId}`}>
         <img src="http://lorempixel.com/375/300/fashion/" alt="fashion 1"/>
-      </a>
+      </Link>
       <span className='feed-item-category'>{props.category}</span>
       <div className='feed-article-container'>
         <a className='feed-item-title' href="#fixme">

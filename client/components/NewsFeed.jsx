@@ -13,6 +13,7 @@ export default class NewsFeed extends React.Component {
             articleAPI.all().map(article => (
               <FeedItem
                 key={article.id}
+                articleId={article.id}
                 category={article.category}
                 title={article.title}
                 publishDate={article.publishDate}
