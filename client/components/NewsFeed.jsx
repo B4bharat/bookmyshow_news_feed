@@ -1,6 +1,7 @@
 import React from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import FeedItem from './FeedItem.jsx';
+import { HeaderNavigation } from './FeedItemElements.jsx';
 import articleAPI from '../utils/articleAPI.js';
 
 export default class NewsFeed extends React.Component {
@@ -8,6 +9,7 @@ export default class NewsFeed extends React.Component {
 
     return (
       <div className='container'>
+        <HeaderNavigation></HeaderNavigation>
         <SwipeableViews axis='y' animateHeight={true} enableMouseEvents={true}>
           {
             articleAPI.all().map(article => (

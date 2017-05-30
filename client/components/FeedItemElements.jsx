@@ -1,6 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+function HeaderNavigation(props) {
+  return (
+    <div className='header-navigation'>
+      {
+        props.articleId ? <div><span>Back</span><span>modus</span></div> : <span>modus</span>
+      }
+    </div>
+  );
+}
+
 function ArticleHeaderImage(props) {
   return (
     <Link to={`/newsfeed/${props.articleId}`}>
@@ -54,4 +64,4 @@ function AuthorDetails(props) {
   );
 }
 
-export { ArticleHeaderImage, ArticleTitle, PublishDetails, ArticleSnippet, ReadMore, AuthorDetails };
+export { HeaderNavigation, ArticleHeaderImage, ArticleTitle, PublishDetails, ArticleSnippet, ReadMore, AuthorDetails };
