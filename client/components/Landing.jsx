@@ -10,6 +10,9 @@ export default function Landing(props) {
         <h1>Welcome Aboard!</h1>
         <p>A one of a kind platform to discover, create, manage blogs</p>
       </div>
+      <div className='intro-button'>
+        start your journey
+      </div>
     </div>
   );
 }

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: -webkit-gradient(
         linear,
@@ -20,9 +24,36 @@ body {
 
 .title-image {
   width: 55%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
 .title-image > img {
   width: 100%;
+}
+
+.intro-text {
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.intro-text > h1 {
+  margin-bottom: 7px;
+}
+
+.intro-text > p {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.intro-button {
+  width: 85%;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 15px;
+  background: #00b63f;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
 }
