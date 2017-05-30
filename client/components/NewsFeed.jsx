@@ -21,17 +21,19 @@ const styles = {
 export default class NewsFeed extends React.Component {
   render() {
     return (
-      <SwipeableViews axis='y' animateHeight={true} >
-        <div style={Object.assign({}, styles.slide, styles.slide1)}>
-          slide n°1
-        </div>
-        <div style={Object.assign({}, styles.slide, styles.slide2)}>
-          slide n°2
-        </div>
-        <div style={Object.assign({}, styles.slide, styles.slide3)}>
-          slide n°3
-        </div>
-      </SwipeableViews>
+      <div className='container'>
+        <SwipeableViews axis='y' animateHeight={true} enableMouseEvents={true}>
+          <div style={Object.assign({}, styles.slide, styles.slide1)}>
+            slide n°1
+          </div>
+          <div style={Object.assign({}, styles.slide, styles.slide2)}>
+            slide n°2
+          </div>
+          <div style={Object.assign({}, styles.slide, styles.slide3)}>
+            slide n°3
+          </div>
+        </SwipeableViews>
+      </div>
     );
   }
 }
