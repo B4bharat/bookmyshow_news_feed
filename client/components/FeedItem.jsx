@@ -17,7 +17,7 @@ export default function FeedItem(props) {
           <li className='readers-count'>{props.readerCount} readers</li>
         </ul>
         <div className='article-snippet'>
-          {props.articleText.slice(1, 400)}
+          {props.articleText.slice(0, 400)}
         </div>
         <div className='read-more'>
           <a href="#fixme">Read more...</a>
