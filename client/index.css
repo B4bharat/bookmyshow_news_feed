@@ -6,9 +6,10 @@ body {
         color-stop(0, #A7A7A7),
         color-stop(0.51, #E4E4E4)
     );
-    height: 100vh;
+    min-height: 100vh;
 }
 
+/*Landing Page*/
 .container {
   max-width: 375px;
   height: 100vh;
