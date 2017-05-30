@@ -64,3 +64,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.slide {
+  padding: 15px;
+  min-height: 100vh;
+  color: #fff;
+  background: #B3DC4A;
+}
