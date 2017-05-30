@@ -1,8 +1,10 @@
 import React from 'react';
+import NewsFeed from './NewsFeed.jsx';
+import { Link } from 'react-router-dom';
 
 export default function Landing(props) {
   return (
-    <div>
+    <div className='container'>
       <div className='title-image'>
         <img src={require('../images/modus_green.png')} alt="title image"/>
       </div>
@@ -10,9 +12,9 @@ export default function Landing(props) {
         <h1>Welcome Aboard!</h1>
         <p>A one of a kind platform to discover, create, manage blogs</p>
       </div>
-      <div className='intro-button'>
+      <Link className='intro-button' to='/newsfeed'>
         start your journey
-      </div>
+      </Link>
     </div>
   );
 }
