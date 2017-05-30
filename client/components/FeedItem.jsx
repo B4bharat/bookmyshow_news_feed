@@ -1,34 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ArticleHeaderImage, ArticleTitle, PublishDetails, ArticleSnippet, ReadMore, AuthorDetails} from './FeedItemElements.jsx';
 
 export default function FeedItem(props) {
   return (
     <div className='feed-item'>
-      <Link to={`/newsfeed/${props.articleId}`}>
-        <img src="http://lorempixel.com/375/300/fashion/" alt="fashion 1"/>
-      </Link>
+      <ArticleHeaderImage articleId={props.articleId}></ArticleHeaderImage>
       <span className='feed-item-category'>{props.category}</span>
       <div className='feed-article-container'>
-        <Link to={`/newsfeed/${props.articleId}`}>
-          <h1>{props.title}</h1>
-        </Link>
-        <ul className='feed-item-publish-details'>
-          <li className='published-date'>{props.publishDate}</li>
-          <li className='reading-length'>{props.lengthInMins} min read</li>
-          <li className='readers-count'>{props.readerCount} readers</li>
-        </ul>
-        <div className='article-snippet'>
-          {props.articleText.slice(0, 400)}
-        </div>
-        <div className='read-more'>
-          <Link to={`/newsfeed/${props.articleId}`}>Read more...</Link>
-          <span>{props.bookmarks} bookmarks</span>
-        </div>
-        <div className='author-details'>
-          <span className='author-pic'></span>
-          <span className='author-name'>{props.authorName}</span>
-          <span className='subscriber-count'>{props.authorSubscribers} subscribers</span>
-        </div>
+        <ArticleTitle
+          articleId={props.articleId}
+          title={props.title}
+        >
+        </ArticleTitle>
+        <PublishDetails
+          publishDate={props.publishDate}
+          lengthInMins={props.lengthInMins}
+          readerCount={props.readerCount}
+        >
+        </PublishDetails>
+        <ArticleSnippet
+          articleText={props.articleText}
+        >
+        </ArticleSnippet>
+        <ReadMore
+          articleId={props.articleId}
+          bookmarks={props.bookmarks}
+        >
+        </ReadMore>
+        <AuthorDetails
+          authorName={props.authorName}
+          authorSubscribers={props.authorSubscribers}
+        >
+        </AuthorDetails>
       </div>
     </div>
   );
