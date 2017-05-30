@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Landing(props) {
   return (
-    <div className='container'>
+    <div className='container landing-container'>
       <div className='title-image'>
         <img src={require('../images/modus_green.png')} alt="title image"/>
       </div>
