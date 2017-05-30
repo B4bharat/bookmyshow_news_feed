@@ -7,7 +7,7 @@ export default function FeedItemDetails(props) {
   );
   
   return (
-    <div className='container'>
+    <div className='container feed-item-detail'>
       <div className='cover-photo'>
         <img src="http://lorempixel.com/375/300/fashion/" alt="fashion 1"/>
       </div>

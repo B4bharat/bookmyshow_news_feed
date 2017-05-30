@@ -9,9 +9,9 @@ export default function FeedItem(props) {
       </Link>
       <span className='feed-item-category'>{props.category}</span>
       <div className='feed-article-container'>
-        <a className='feed-item-title' href="#fixme">
+        <Link to={`/newsfeed/${props.articleId}`}>
           <h1>{props.title}</h1>
-        </a>
+        </Link>
         <ul className='feed-item-publish-details'>
           <li className='published-date'>{props.publishDate}</li>
           <li className='reading-length'>{props.lengthInMins} min read</li>
@@ -21,7 +21,7 @@ export default function FeedItem(props) {
           {props.articleText.slice(0, 400)}
         </div>
         <div className='read-more'>
-          <a href="#fixme">Read more...</a>
+          <Link to={`/newsfeed/${props.articleId}`}>Read more...</Link>
           <span>{props.bookmarks} bookmarks</span>
         </div>
         <div className='author-details'>

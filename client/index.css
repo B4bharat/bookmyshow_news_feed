@@ -157,5 +157,9 @@ body {
   letter-spacing: 1px;
 }
 
+/*Feed Item Detail*/
+.feed-item-detail {
+  height: auto;
+}
 
 
