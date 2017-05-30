@@ -17,7 +17,7 @@ export default function FeedItem(props) {
           <li className='readers-count'>{props.readerCount} readers</li>
         </ul>
         <div className='article-snippet'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet a adipisci provident soluta blanditiis qui nobis, impedit sequi ratione nihil, delectus odio voluptatibus, voluptatem voluptate corporis? Consectetur ad voluptate molestias similique quibusdam eum aspernatur, nesciunt. Consequuntur inventore quo doloribus, labore quidem ullam suscipit iusto placeat explicabo ipsa nesciunt.
+          {props.articleText.slice(1, 400)}
         </div>
         <div className='read-more'>
           <a href="#fixme">Read more...</a>
