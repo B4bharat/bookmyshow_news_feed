@@ -31,9 +31,16 @@ body {
   z-index: 999;
 }
 
+.fa-arrow-left { color: #fff; }
+
 .app-title {
   margin-left: 35px;
   text-transform: uppercase;
+}
+
+.article-detail .fa-bars { 
+  float: right;
+  margin-right: 20px;
 }
 
 /*Landing Page*/
