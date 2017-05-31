@@ -26,6 +26,7 @@ body {
   height: 50px;
   padding: 12px 0 0 20px;
   position: fixed;
+  top: 0;
   color: #fff;
   background: rgba(0,0,0,0.4);
   z-index: 999;
@@ -184,6 +185,13 @@ body {
 /*Feed Item Detail*/
 .feed-item-detail {
   height: auto;
+  background: #fff;
+}
+
+.feed-article {
+  padding: 15px;
+  color: #666;
+  font-size: 20px;
 }
 
 
