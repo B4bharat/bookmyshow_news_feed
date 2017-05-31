@@ -208,4 +208,26 @@ span.subscriber-count {
   font-size: 20px;
 }
 
+.feed-item-detail .cover-photo {
+  width: 100%;
+  height: 350px;
+  color: #fff;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.feed-item-detail .cover-photo .article-category {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+}
+
+.feed-item-detail .cover-photo .article-title {
+  margin-bottom: 40px;
+}
+
+.feed-item-detail .feed-item-publish-details {
+  color: #fff;
+}
 
