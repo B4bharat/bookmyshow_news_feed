@@ -175,11 +175,25 @@ body {
   margin-top: 15px;
 }
 
+.author-details span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.author-pic img {
+  border-radius: 50%;
+}
+
 .author-name {
+  margin-left: 15px;
   color: #01b73f;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+span.subscriber-count {
+  margin-top: 6px;
 }
 
 /*Feed Item Detail*/

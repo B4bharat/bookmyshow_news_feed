@@ -69,7 +69,9 @@ function ReadMore(props) {
 function AuthorDetails(props) {
   return (
     <div className='author-details'>
-      <span className='author-pic'></span>
+      <span className='author-pic'>
+        <img src="http://lorempixel.com/30/30/people/" alt="author pic"/>
+      </span>
       <span className='author-name'>{props.authorName}</span>
       <span className='subscriber-count'>{props.authorSubscribers} subscribers</span>
     </div>
