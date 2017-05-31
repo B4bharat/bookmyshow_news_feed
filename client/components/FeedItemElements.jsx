@@ -5,7 +5,7 @@ function HeaderNavigation(props) {
   return (
     <div className='header-navigation'>
       {
-        props.articleId ? <div><span>Back</span><span>modus</span></div> : <span>modus</span>
+        props.articleId ? <div><span>Back</span><span className='app-title'>modus</span></div> : <div><i className="fa fa-bars" aria-hidden="true"></i><span className='app-title'>modus</span></div>
       }
     </div>
   );

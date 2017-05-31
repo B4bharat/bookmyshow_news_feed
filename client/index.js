@@ -11,6 +11,7 @@ import NewsFeed from './components/NewsFeed.jsx';
 import FeedItemDetails from './components/FeedItemDetails.jsx';
 
 import './index.css';
+import './icons/font-awesome-4.7.0/css/font-awesome.min.css';
 
 ReactDOM.render((
 <Router>
