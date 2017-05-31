@@ -5,7 +5,7 @@ import { ArticleHeaderImage, ArticleTitle, PublishDetails, ArticleSnippet, ReadM
 export default function FeedItem(props) {
   return (
     <div className='feed-item'>
-      <ArticleHeaderImage articleId={props.articleId}></ArticleHeaderImage>
+      <ArticleHeaderImage articleId={props.articleId} imgCategory={props.imgCategory}></ArticleHeaderImage>
       <span className='feed-item-category'>{props.category}</span>
       <div className='feed-article-container'>
         <ArticleTitle

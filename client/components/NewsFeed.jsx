@@ -17,6 +17,7 @@ export default class NewsFeed extends React.Component {
                 key={article.id}
                 articleId={article.id}
                 category={article.category}
+                imgCategory={article.imgCategory}
                 title={article.title}
                 publishDate={article.publishDate}
                 lengthInMins={article.lengthInMins}

@@ -5,6 +5,7 @@ export default function articleDetails() {
   {
     id: 1,
     category: 'fashion',
+    imgCategory: 'fashion',
     coverImage: '/path/to/image',
     title: 'Dark Horse',
     publishDate: '19 Sept',
@@ -19,9 +20,10 @@ export default function articleDetails() {
   },
   {
     id: 2,
-    category: 'fashion',
+    category: 'travel',
+    imgCategory: 'nature',
     coverImage: '/path/to/image',
-    title: 'What to wear to an outdoor Indian wedding',
+    title: 'Solo Travel Moments that left me scared shitless',
     publishDate: '28 July',
     lengthInMins: 6,
     readerCount: 20,
@@ -35,6 +37,7 @@ export default function articleDetails() {
   {
     id: 3,
     category: 'technology',
+    imgCategory: 'technics',
     coverImage: '/path/to/image',
     title: 'How to Write a Twitter Bot in 5 Minutes',
     publishDate: '09 April',

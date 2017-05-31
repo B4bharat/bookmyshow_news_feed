@@ -26,7 +26,7 @@ function HeaderNavigation(props) {
 function ArticleHeaderImage(props) {
   return (
     <Link to={`/newsfeed/${props.articleId}`}>
-      <img src="http://lorempixel.com/375/300/fashion/" alt="fashion 1"/>
+      <img src={`http://lorempixel.com/375/300/${props.imgCategory}/`} alt="fashion 1"/>
     </Link>
   );
 }
